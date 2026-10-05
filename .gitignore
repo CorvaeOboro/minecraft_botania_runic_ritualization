@@ -1,2 +1,7 @@
 init_git_repo.bat
 gradle-wrapper.jar
+.gradle/
+backup/
+bin/
+build/
+notes/
