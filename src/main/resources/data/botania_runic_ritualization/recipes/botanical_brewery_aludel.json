@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "VMO",
+    "TBT",
+    "SLS"
+  ],
+  "key": {
+    "V": { "item": "botania:brew_vial" },
+    "M": { "item": "botania:mana_diamond" },
+    "O": { "item": "botania:brew_vial" },
+    "T": { "item": "botania:terrasteel_ingot" },
+    "B": { "item": "botania:brewery" },
+    "L": { "item": "botania:mossy_livingrock_bricks" },
+    "S": { "item": "minecraft:brewing_stand" }
+  },
+  "result": { "item": "botania_runic_ritualization:botanical_brewery_aludel" }
+}

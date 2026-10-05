@@ -1,0 +1,17 @@
+{
+  "name": "botania_runic_ritualization.entry.runic_altar_dais",
+  "category": "botania:devices",
+  "icon": "botania_runic_ritualization:runic_altar_dais",
+  "priority": false,
+  "pages": [
+    {
+      "type": "text",
+      "text": "botania_runic_ritualization.page.runic_altar_dais.0"
+    },
+    {
+      "type": "crafting",
+      "recipe": "botania_runic_ritualization:runic_altar_dais",
+      "text": "botania_runic_ritualization.page.runic_altar_dais.1"
+    }
+  ]
+}

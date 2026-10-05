@@ -1,0 +1,17 @@
+{
+  "name": "botania_runic_ritualization.entry.petal_apothecary_everflowing",
+  "category": "botania:devices",
+  "icon": "botania_runic_ritualization:petal_apothecary_everflowing",
+  "priority": false,
+  "pages": [
+    {
+      "type": "text",
+      "text": "botania_runic_ritualization.page.petal_apothecary_everflowing.0"
+    },
+    {
+      "type": "crafting",
+      "recipe": "botania_runic_ritualization:petal_apothecary_everflowing",
+      "text": "botania_runic_ritualization.page.petal_apothecary_everflowing.1"
+    }
+  ]
+}

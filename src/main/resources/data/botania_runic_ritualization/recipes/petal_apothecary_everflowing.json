@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "FWF",
+    "TAT",
+    "VLV"
+  ],
+  "key": {
+    "F": { "item": "botania:fertilizer" },
+    "W": { "item": "minecraft:water_bucket" },
+    "T": { "item": "botania:terrasteel_ingot" },
+    "A": { "item": "botania:apothecary_default" },
+    "V": { "item": "minecraft:vine" },
+    "L": { "item": "botania:mossy_livingrock_bricks" }
+  },
+  "result": { "item": "botania_runic_ritualization:petal_apothecary_everflowing" }
+}

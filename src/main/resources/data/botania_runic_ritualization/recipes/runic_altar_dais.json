@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "EMA",
+    "TRT",
+    "FLW"
+  ],
+  "key": {
+    "E": { "item": "botania:rune_earth" },
+    "M": { "item": "botania:mana_pylon" },
+    "A": { "item": "botania:rune_air" },
+    "T": { "item": "botania:terrasteel_ingot" },
+    "R": { "item": "botania:runic_altar" },
+    "F": { "item": "botania:rune_fire" },
+    "L": { "item": "botania:mossy_livingrock_bricks" },
+    "W": { "item": "botania:rune_water" }
+  },
+  "result": { "item": "botania_runic_ritualization:runic_altar_dais" }
+}

@@ -1,0 +1,17 @@
+{
+  "name": "botania_runic_ritualization.entry.pedestal_of_living_rock",
+  "category": "botania:devices",
+  "icon": "botania_runic_ritualization:pedestal_of_living_rock",
+  "priority": false,
+  "pages": [
+    {
+      "type": "text",
+      "text": "botania_runic_ritualization.page.pedestal_of_living_rock.0"
+    },
+    {
+      "type": "crafting",
+      "recipe": "botania_runic_ritualization:pedestal_of_living_rock",
+      "text": "botania_runic_ritualization.page.pedestal_of_living_rock.1"
+    }
+  ]
+}

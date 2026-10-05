@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "botania_runic_ritualization",
+  "version": "${version}",
+  "name": "Botania Runic Ritualization",
+  "description": "Botania addon with batch crafting of runes, flowers, and brews. Drawing ingredients from nearby pedestals.",
+  "icon": "icon_botania_runic_ritualization.png",
+  "authors": [
+    "CorvaeOboro"
+  ],
+  "contact": {
+    "homepage": "https://github.com/CorvaeOboro/minecraft_botania_runic_ritualization",
+    "sources": "https://github.com/CorvaeOboro/minecraft_botania_runic_ritualization",
+    "issues": "https://github.com/CorvaeOboro/minecraft_botania_runic_ritualization/issues"
+  },
+  "license": "Creative Commons Zero 1.0",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "corvaeoboro.botania_runic_ritualization.BotaniaRunicRitualization"
+    ],
+    "client": [
+      "corvaeoboro.botania_runic_ritualization.BotaniaRunicRitualizationClient"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.15.6",
+    "fabric-api": "*",
+    "minecraft": "=1.20.1",
+    "java": ">=17",
+    "botania": "*"
+  },
+  "suggests": {
+    "emi": "*"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "name": "botania_runic_ritualization.entry.botanical_brewery_aludel",
+  "category": "botania:devices",
+  "icon": "botania_runic_ritualization:botanical_brewery_aludel",
+  "priority": false,
+  "pages": [
+    {
+      "type": "text",
+      "text": "botania_runic_ritualization.page.botanical_brewery_aludel.0"
+    },
+    {
+      "type": "crafting",
+      "recipe": "botania_runic_ritualization:botanical_brewery_aludel",
+      "text": "botania_runic_ritualization.page.botanical_brewery_aludel.1"
+    }
+  ]
+}

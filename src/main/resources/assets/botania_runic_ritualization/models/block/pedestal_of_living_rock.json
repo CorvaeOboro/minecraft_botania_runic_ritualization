@@ -1,0 +1,55 @@
+{
+	"format_version": "1.20.1",
+	"parent": "block/block",
+	"textures": {"particle": "botania_runic_ritualization:block/pedestal_of_living_rock", "brick": "botania_runic_ritualization:block/pedestal_of_living_rock"},
+	"elements": [
+		{
+			"name": "base_A",
+			"from": [3, 0, 3], "to": [13, 2, 13],
+			"faces": {
+				"north": {"uv": [1, 0.25, 4.25, 1], "rotation": 180, "texture": "#brick", "tintindex": 0},
+				"east": {"uv": [4.25, 1, 5, 4.25], "rotation": 90, "texture": "#brick", "tintindex": 0},
+				"south": {"uv": [1, 4.25, 4.25, 5], "texture": "#brick", "tintindex": 0},
+				"west": {"uv": [0.25, 1, 1, 4.25], "rotation": 270, "texture": "#brick", "tintindex": 0},
+				"up": {"uv": [1, 1, 4.25, 4.25], "texture": "#brick", "tintindex": 0},
+				"down": {"uv": [1, 5, 4.25, 8.375], "texture": "#brick", "cullface": "down", "tintindex": 0}
+			}
+		},
+		{
+			"name": "middle_pillar",
+			"from": [5, 2, 5], "to": [11, 11, 11],
+			"faces": {
+				"north": {"uv": [6.5, 10.75, 8.5, 13.75], "texture": "#brick", "tintindex": 0},
+				"east": {"uv": [0.25, 10.75, 2.25, 13.75], "texture": "#brick", "tintindex": 0},
+				"south": {"uv": [2.25, 10.75, 4.375, 13.75], "texture": "#brick", "tintindex": 0},
+				"west": {"uv": [4.375, 10.75, 6.5, 13.75], "texture": "#brick", "tintindex": 0},
+				"up": {"uv": [2.25, 8.625, 4.375, 10.75], "texture": "#brick", "tintindex": 0},
+				"down": {"uv": [2.25, 13.75, 4.375, 15.875], "texture": "#brick", "tintindex": 0}
+			}
+		},
+		{
+			"name": "top_ring",
+			"from": [4, 11, 4], "to": [12, 12, 12],
+			"faces": {
+				"north": {"uv": [9, 8.625, 11.75, 9], "texture": "#brick", "tintindex": 0},
+				"east": {"uv": [11.75, 9, 12.125, 11.75], "rotation": 90, "texture": "#brick", "tintindex": 0},
+				"south": {"uv": [9, 11.75, 11.75, 12], "texture": "#brick", "tintindex": 0},
+				"west": {"uv": [8.75, 9, 9, 11.75], "rotation": 90, "texture": "#brick", "tintindex": 0},
+				"up": {"uv": [9, 12, 11.75, 14.75], "texture": "#brick", "tintindex": 0},
+				"down": {"uv": [9, 9, 11.75, 11.75], "texture": "#brick", "tintindex": 0}
+			}
+		},
+		{
+			"name": "base_B",
+			"from": [3, 12, 3], "to": [13, 14, 13],
+			"faces": {
+				"north": {"uv": [6, 0.25, 9.25, 1], "rotation": 180, "texture": "#brick", "tintindex": 0},
+				"east": {"uv": [9.25, 1, 10, 4.25], "rotation": 90, "texture": "#brick", "tintindex": 0},
+				"south": {"uv": [6, 4.25, 9.25, 5], "texture": "#brick", "tintindex": 0},
+				"west": {"uv": [5.25, 1, 6, 4.25], "rotation": 270, "texture": "#brick", "tintindex": 0},
+				"up": {"uv": [6, 1, 9.25, 4.25], "texture": "#brick", "tintindex": 0},
+				"down": {"uv": [6, 5, 9.25, 8.375], "texture": "#brick", "tintindex": 0}
+			}
+		}
+	]
+}
