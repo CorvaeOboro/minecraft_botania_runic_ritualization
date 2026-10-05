@@ -1,0 +1,66 @@
+plugins {
+    id 'fabric-loom' version '1.3.8'
+    id 'maven-publish'
+}
+
+version = project.mod_version
+group = project.maven_group
+
+base {
+    archivesName = project.archives_base_name
+}
+
+loom {
+    splitEnvironmentSourceSets()
+
+    runs {
+        configureEach {
+            def configuredRunDir = project.findProperty("botania_runic_ritualization_run_dir") ?: "run_fabric_isolated_1_20_1"
+            runDir configuredRunDir
+        }
+    }
+}
+
+repositories {
+    maven { url = 'https://maven.fabricmc.net/' }
+    maven { url = 'https://maven.parchmentmc.net/' }
+    maven { url = 'https://maven.terraformersmc.com/' }
+    mavenCentral()
+}
+
+dependencies {
+    minecraft "com.mojang:minecraft:${minecraft_version}"
+    mappings loom.layered() {
+        officialMojangMappings()
+        parchment("org.parchmentmc.data:parchment-1.20.1:2023.09.03@zip")
+    }
+    modImplementation "net.fabricmc:fabric-loader:${loader_version}"
+    modImplementation "net.fabricmc.fabric-api:fabric-api:${fabric_version}"
+
+    // Botania (compile-only, dev jar - already in Mojang mappings).
+    // The dev jar lives next to this repository; adjust path if your layout differs.
+    compileOnly files("../Botania-1.20.x/Fabric/build/devlibs/Botania-1.20.1-452-FABRIC-SNAPSHOT-dev.jar")
+
+    // Optional integration: EMI (recipe viewer)
+    modCompileOnly "dev.emi:emi-fabric:${emi_version}:api"
+    modLocalRuntime "dev.emi:emi-fabric:${emi_version}"
+}
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(17)
+    }
+    withSourcesJar()
+}
+
+tasks.withType(JavaCompile).configureEach {
+    it.options.release = 17
+}
+
+processResources {
+    inputs.property "version", project.version
+
+    filesMatching("fabric.mod.json") {
+        expand "version": project.version
+    }
+}
